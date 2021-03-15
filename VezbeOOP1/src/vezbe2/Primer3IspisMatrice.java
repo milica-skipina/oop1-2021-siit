@@ -8,11 +8,11 @@ public class Primer3IspisMatrice {
 		int n = 4, m = 7;
 		System.out.println("Matrica A je oblika: ");
 		for (int i = 1; i <= n; i++) {
-			System.out.print("\t");
-			for (int j = 1; j <= m; j++) {
-				System.out.print(j);
+			System.out.println("\t");
+			for (int j = 1; i <= m; j++) {
+				System.out.println(j);
 				if (j < m) {
-					System.out.print(" ");
+					System.out.println(" ");
 				}
 			}
 			System.out.println("\n");
