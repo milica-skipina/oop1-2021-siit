@@ -11,23 +11,25 @@ public class TestStudent {
 		niz[1] = new Student();
 		niz[2] = new Student();
 
-		// posto je atribute private, java gresku
+		// greska - atribut ime nije vidljiv (modifikator pristupa private)
 		// System.out.println(niz[0].ime);
 
-		// pristup atributima
+		// kontrolisan pristup atributima
 		System.out.println(niz[0].getIme());
 
 		for (Student s : niz) {
-			s.ispisi();
+			s.prikaziPodatke();
 		}
 		
+		// greska
+		// niz[0].ime = "Milan"
+		
+		// izmena vrednosti atributa
 		niz[0].setIme("Milan");
 		niz[0].setIndeks("12345");
 		niz[0].setGrad("Novi Sad");
-		niz[0].ispisi();
+		niz[0].prikaziPodatke();
 			
-		// Broj elemenata moze biti zadat inicijalno
-		// ArrayList<Integer> arrL = new ArrayList<Integer>(2);
 		ArrayList<Student> dinamickiNiz = new ArrayList<Student>();
 		dinamickiNiz.add(new Student());
 		dinamickiNiz.add(new Student());
@@ -36,7 +38,7 @@ public class TestStudent {
 		System.out.println(dinamickiNiz.get(0));
 
 		for (Student s : dinamickiNiz) {
-			s.ispisi();
+			s.prikaziPodatke();
 		}
 
 	}

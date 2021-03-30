@@ -9,13 +9,16 @@ public class Test {
 		
 		// rad sa statickim atributima
 		System.out.println(Brojac.vrednost);
-		br1.vrednost = 2;
+		//	br1.vrednost = 2;
 		System.out.println(br2.vrednost);
 		System.out.println(Brojac.NAZIV);
 		
-		// greska - nije moguce menjati vrednost finalne promenljive 
-//		Brojac.NAZIV = "Naziv 2";
+		Brojac br3 = new Brojac();
+		System.out.println(Brojac.vrednost);
+		System.out.println(br2.vrednost);
 
+		// greska - nije moguce menjati vrednost final atributa 
+		// Brojac.NAZIV = "Naziv 2";
 	}
 
 }

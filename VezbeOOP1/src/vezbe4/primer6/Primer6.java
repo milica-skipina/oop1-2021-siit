@@ -28,6 +28,7 @@ public class Primer6 {
 		} catch (Exception e) {
 			System.out.println("Greska prilikom parsiranja");
 		}
+
 	}
 
 }

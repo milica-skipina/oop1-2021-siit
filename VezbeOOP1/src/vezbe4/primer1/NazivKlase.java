@@ -9,6 +9,11 @@ public class NazivKlase {
 	void nazivMetode() {
 		// promena vrednosti atributa
 		nazivAtributa = true;
+
+		// greska - lokalne promenljive nemaju predefinisanu (default) vrednost!
+		/* boolean temp;
+		 *nazivAtributa = temp;
+		 */
 	}
 
 }

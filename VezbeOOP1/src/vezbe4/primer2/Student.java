@@ -5,8 +5,11 @@ public class Student {
 	String ime;
 	String indeks;
 	String grad;
-	
-	void ispisi() {
+
+	/**
+	 * Ispisuje podatke o studentu
+	 */
+	void prikaziPodatke() {
 		System.out.println("Student (Ime: " + ime + ", indeks: " + indeks + ", grad: " + grad + ")");
 	}
 }

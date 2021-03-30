@@ -48,7 +48,10 @@ public class Student {
 		this.grad = grad;
 	}
 
-	void ispisi() {
+	/**
+	 * Ispisuje podatke o studentu
+	 */
+	void prikaziPodatke() {
 		System.out.println("Student (Ime: " + ime + ", indeks: " + indeks + ", grad: " + grad + ")");
 	}
 
